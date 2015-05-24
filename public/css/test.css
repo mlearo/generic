@@ -1,0 +1,57 @@
+ #overlay {
+        position: fixed;
+        background-image: url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/retina_wood.png');
+        //background-color:black;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        -webkit-animation:scroll 800s infinite linear;
+        -moz-animation:800s scroll infinite linear;
+        -o-animation:800s scroll infinite linear;
+        -ms-animation:800s scroll infinite linear;
+        animation:scroll 800s  infinite linear;
+        top:0;
+        left:0;
+        width:80%;
+        height:50%;
+
+        
+      }
+
+      .placeddiv {
+          background-color: #fff;
+          width: 4px;
+          height: 4px;
+          position: absolute;
+      }
+
+      @-webkit-keyframes scroll {
+        100%{
+          background-position:0px -3000px;
+        }
+      }
+
+      @-moz-keyframes scroll {
+        100%{
+          background-position:0px -3000px;
+        }
+      }
+
+      @-o-keyframes scroll {
+        100%{
+          background-position:0px -3000px;
+        }
+      }
+
+      @-ms-keyframes scroll {
+        100%{
+          background-position:0px -3000px;
+        }
+      }
+
+      @keyframes scroll {
+        100%{
+          background-position:0px -3000px;
+        }
+      }

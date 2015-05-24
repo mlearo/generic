@@ -1,0 +1,38 @@
+<div id='mainContent' class='row container'>
+
+	
+
+
+	<!-- Modal -->
+
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	    <div class="modal-content">
+		    <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Sign Up!</h4>
+		    </div>
+		    	<form method="post" action="/signin">
+			    <div class="modal-body">
+			    		<!-- Company Logo -->
+			    		<img id="modalImage" src="/images/RQUin.jpeg"></img> 
+				    	<h4>Username</h4>
+				    	<input id="newUserNameInput" class="form-control" required="true" type="text" autofocus="true" maxlength="20"> </input>
+				    	</br>
+				    	<h4>Password</h4>
+				    	
+				    	<input  id="newUserPasswd" class="form-control" required="true" type="password" minlength="8" maxlength="14" ></input>
+	
+	        	</div>
+			    <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button id="signUpButton" type="submit" class="btn btn-primary">Submit</button>
+			    </div>
+
+				</form>
+		</div>
+	</div>
+</div>
+
+
+</div> <!-- end main content container -->
