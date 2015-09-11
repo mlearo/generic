@@ -4,7 +4,13 @@ var express = require('express'),
 
 router.post('/signin', function(req, res){
 
-	console.log('received signin');
+	var user = { 
+		
+		username :req.body.username,
+		passwd : req.body.password,
+	};
+
+	console.log(user.passwd); 
 	res.render('home');
 
 })

@@ -3,37 +3,34 @@
            
 <div class="navbar-wrapper">
     <div class="container">
-        <div  class="navbar navbar-static-top  marginTwo" role="navigation">
+        <div  class="navbar navbar-static-top " role="navigation">
             <div>
-                <a class="marginTwo" id="mainTitle" href="/">Ruff Ruff</a>
+                <h1 class=".font-black"><a class="float-left clear" id="mainTitle" href="#tested">Ruff Ruff</a></h1>
         
-                <% if(true) {%>
-                <div id='navSignIn'>
-                    <form class="navbar-form col-xs-* col-sm-* col-md-*" method="post" action="/signin">
+               
+                <div id='navSignIn' class="float-right">
+                    <form class="navbar-form " method="post" action="/signin">
               
-                        <input id="userNameInput" required="true" autofocus="false" type="text" class="form-control marginTwo" name="username" placeholder="Username">
-                        <input id="passwordInput" required="true" maxlength="10" type="password" class="form-control marginTwo"  name="password" placeholder="Password">
+                        <input id="userNameInput" required="true" autofocus="false" type="text" class="form-control float-right clear" name="username" placeholder="Username">
+                        <input id="passwordInput" required="true" maxlength="10" type="password" class="form-control float-right clear"  name="password" placeholder="Password">
 
-                         <button id="btnSubmit" type="submit" class="btn btn-primary marginTwo">Sign In</button>
+                         <button id="btnSubmit" type="submit" class="btn btn-primary float-right clear">Sign In</button>
                         
-                        <a id="newUserModal" href="" class='marginTwo' data-toggle="modal" data-target="#signUpModal"> <i class="fa fa-user"></i>Create an Account</a> 
-
-                        <!-- <button id="btnSubmit" type="submit" class="btn btn-primary">Sign In</button> -->
+                        <div class="float-right">
+                            <a id="newUserModal" href="" class="float-right" data-toggle="modal" data-target="#signUpModal"> <i class="fa fa-user"></i>Create an Account</a> 
+                            <a id="passwdReset" href="" class="float-right clear">Reset Password</a>
+                        </div>        
              
                     </form>
                     <!-- 
-                    <div id='newUser' class="col-xs-* col-sm-* col-md-*">
-                        <a id="newUserModal" href="" class='marginTwo' data-toggle="modal" data-target="#signUpModal"> <i class="fa fa-user"></i>Create an Account</a> 
-                         <a href="#" class='marginTwo'><i class="fa fa-question"></i>Forgot Password</a> 
-                    </div>
-                    -->                
-                <% } else { %>
                 
-                <form class="navbar-form navbar-right marginTwo" id="navSignIn" method="get" action="/logout">
-                    <button id="btnLogout"  class="btn btn-primary marginTwo">Logout</button>
+                <form class="navbar-form navbar-right" id="navSignIn" method="get" action="/logout">
+                    <button id="btnLogout"  class="btn btn-primary">Logout</button>
                 </form>
+            -->
             </div>
-          <% } %>
+
+
        
        <!-- open a new window without changing the currently displayed content --> 
      <!-- <button class='btn btn-submit' onclick='javascript:void window.open("http://www.google.com")'>Submit</button> -->

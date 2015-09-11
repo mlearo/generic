@@ -10,10 +10,7 @@ var userSchema = new Schema({
 
 	username: {type: String, requiered: true, unique: true},
 	passwd: {type: String, requiered: true, unique: true},
-	//status: "Active",
-	//groups: [],
-	//comments: [commentID1, commentID2, commentID3],
-  	resetPasswordToken: String,
+	resetPasswordToken: String,
   	resetPasswordExpires: Date
 })
 

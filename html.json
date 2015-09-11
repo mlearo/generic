@@ -1,0 +1,50 @@
+var html = {
+
+	"1": {
+			"Q":"What does a DOCTYPE do?",
+			"A":"Browsers use a DOCTYPE in the beginning of the document to decide whether to handle it in quirks mode or standards mode.",
+			"Link":"https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
+		},
+	"2": {
+			"Q":"What's the difference between standards mode and quirks mode?",
+			"A":"This means that different rules are applied to the display of the file, one conforming to an interpretation of expected behavior according to W3C standards, the other to expectations based on the non-standard behavior of older browsers.",
+			"Link":"http://reference.sitepoint.com/css/doctypesniffing"
+		},
+	"3": {
+			"Q":"What is Quirks mode?",
+			"A":"quirks mode refers to a technique used by some web browsers for the sake of maintaining backward compatibility with web pages designed for older browsers, instead of strictly complying with W3C and IETF standards in standards mode",
+			"Link":"https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode"
+		},	
+	"4": {
+			"Q":"What's the difference between HTML and XHTML?",
+			"A":"The syntax of the languages and you must change the content-type attribute in the HTTP header.",
+			"Link":"http://www.sitepoint.com/web-foundations/differences-html-xhtml/"
+		},
+	"5": {
+			"Q":"Are there any problems with serving pages as application/xhtml+xml?",
+			"A":"Make sure you change the content-type attribute in the HTTP header. IF the user-agent doesn't handle XML it will parse the document as HTML so differences must be taken into account including different ways of declaring the character encoding or language declarations inside the document."
+		},
+	"6": {
+			"Q":"How do you serve a page with content in multiple languages",
+			"A":"Modify the lang attribute based on what the browser(user-agent) writes for a value for the Accept-Language request header field that it sends to the web server.",
+			"Link":"http://www.w3.org/International/questions/qa-html-language-declarations",
+		},	
+	"8": {
+			"Q":"What kind of things must you be wary of when designing or developing for multilingual sites?",
+			"A":"1.You must have translated/localized pages on the server for each language you intend to support.
+				2.Your server must recognize the browser’s language request.
+				3.You must carefully name the files for the localized pages, so the server has a systematic way of locating them.
+				4.You need a method for serving a generic page when you don’t have the requested language.",
+			"Link":"http://www.pro-tekconsulting.com/blog/how-do-you-serve-a-page-with-content-in-multiple-languages/"
+		},	
+	"9": {
+			"Q":"What are data- attributes good for?",
+			"A":"Associating data with a particular element",
+			"Link":"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes"
+		},	
+	"10": {
+			"Q":"",
+			"A":"- more semantic text markup - new form elements - video and audio - new javascript API - canvas and SVG - new communication API - geolocation API - web worker API - new data storage",
+			"Link":"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+		},				
+}

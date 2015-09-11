@@ -1,0 +1,142 @@
+//2015-03-07: Stopped at section 2.4
+
+var questions = {
+
+	"1": {
+		"Q":"How do you initialize a new git repository?",
+		"A":"git init"
+	},
+	"2": {
+		"Q":"How do you git an existing repository?",
+		"A":"git clone urlOfGitRepositoryHere"
+	},
+	"3": {
+		"Q":"What are the three states a file can be in?",
+		"A":"Staged, Unmodified, Modified"
+	},
+	"4": {
+		"Q":"How do you determine which files are in which state?",
+		"A":"git status"
+	},
+	"5": {
+		"Q":"How do you begin tracking new files",
+		"A":"git add fileName"
+	},
+	"6": {
+		"Q":"How do you tell git to not track or even show certain files?",
+		"A":".gitignore config file"
+	},
+	"7": {
+		"Q":"How do you view staged and unstaged changes?",
+		"A":"git status"
+	},
+	"8": {
+		"Q":"How command compares what is in your working directory with what is in your staging area, and displays the changes you have made but have yet to be staged?",
+		"A":"git diff"
+	},
+	"9": {
+		"Q":"What command compares your staged changs to your last commit?",
+		"A":"git diff --staged"
+	},
+	"10": {
+		"Q":"After staging files, what command applies the changes?",
+		"A":"git commit"
+	},
+	"11": {
+		"Q":"What command removes files?",
+		"A":"git rm fileName"
+	},
+	"12": {
+		"Q":"What command moves/renames files",
+		"A":"git mv fileName newFileName"
+	},
+	"13": {
+		"Q":"What command allows you to the view commit history?",
+		"A":"git log",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History"
+
+	},
+	"14": {
+		"Q":"What command allows you to re commit if you commit without staging all the files you wanted?",
+		"A":"git commit --amend",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things"
+	},
+	"15": {
+		"Q":"What command unstages a file?",
+		"A":"git reset HEAD fileName",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things"
+	},
+	"16": {
+		"Q":"How can you revert a file back to its contents at the last commit?",
+		"A":"git checkout -- fileName",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things"
+	},
+	"17": {
+		"Q":"If your commit message is incorrect how can change it?",
+		"A":"git commit --amend -m 'message here'",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things"
+
+	},
+	"18": {
+		"Q":"What command would you use to view which remote servers you have configured?",
+		"A":"git remote -v",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes"
+	},
+	"19": {
+		"Q":"What command allows you to add a remote repository?",
+		"A":"git remote add [shortname] [url]",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes"
+	},
+	"20": {
+		"Q":"What command allows you to update your local repository with new data from an existing repository?",
+		"A":"git fetch [remote-name]",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes"
+	},
+	"21": {
+		"Q":"When you have your project at a point that you want to share, how do you push your project upstream?",
+		"A":"git push [remote-name] [branch-name]",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes"
+	},
+	"22": {
+		"Q":"What command allows you to view more information about a remote repository?",
+		"A":"git remote show [remote-name]",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes"
+	},
+	"23": {
+		"Q":"How do you change a remotes shortname?",
+		"A":"git remote rename [old remote-shortname] [new remote-shortname]",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes"
+	},
+	"24": {
+		"Q":"What is a remote repository?",
+		"A":"Remote repsoitories are versions of your project that are hosted on the internet or network somewhere.",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes"
+	},
+	"25": {
+		"Q":"What command removes a remote repository?",
+		"A":"git remote rm [remote-shortname]",
+		"Link":"https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes"
+	},
+	"26": {
+		"Q":"",
+		"A":""
+	},
+	"27": {
+		"Q":"",
+		"A":""
+	},
+	"28": {
+		"Q":"",
+		"A":""
+	},
+	"29": {
+		"Q":"",
+		"A":""
+	},
+	"30": {
+		"Q":"",
+		"A":""
+	},
+
+
+}

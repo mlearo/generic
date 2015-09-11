@@ -1,0 +1,208 @@
+var javascript = {
+	
+	"1": {
+		"Q":"Describe lexical scope",
+		"A":"The scope of a variable can be thought of as the set of source code lines for which the variable is defined.",
+		"Link":""
+	},
+	"2": {
+		"Q":"Describe scope chain",
+		"A":"Variables are just properties of some implementation defined object, thus the scope chain is a list/chain of objects that defines the variables that are in scope for that code.",
+		"Link":""
+	},
+	"3": {
+		"Q":"What is the process called when javascript needs to look up the value of a variable?",
+		"A":"Variable Resolution",
+		"Link":""
+	},
+	"4": {
+		"Q":"Describe the variable resolution process.",
+		"A":"When javascript needs to look up the value of a variable x, it starts by looking at the first object in the scope chain, if that object has a property named x, the value of that property is used, if no x property is found in the first object than the second object is traversed for property x, and so on until found or the end of the scope chain is reached, and if x is not a property of any of the objects in the scope chain then x in not in the scope for that code and a ReferenceError occurs.",
+		"Link":""
+	},
+	"5": {
+		"Q":"What does the lenght property of a function represent?",
+		"A":"The number of expected arguments defined for that function.",
+		"Link":"arguments.callee.length"
+	},
+	"6": {
+		"Q":"What is the main idea of the call() and apply() methods?",
+		"A":"To allow indirect invocation of a function as if it were a method of some other object. This is useful to use instead of adding a new method to a object that already exists as a function.",
+		"Link":""
+	},
+	"7": {
+		"Q":"What is the first argument taken by the call() and apply() methods?",
+		"A":"The object on which the function is to be invoked, this argument is the invocation context & becomes the value of the 'this' keyword.",
+		"Link":""
+	},
+	"8": {
+		"Q":"What is the main difference between call() and apply() methods?",
+		"A":"call() second parameter is a list of comma separated arguments, whereas apply() second parameter expects to be passed an array of arguments.",
+		"Link":""
+	},
+	"9": {
+		"Q":"Describe bind()",
+		"A":"bind() is used to bind a function to an object, thus when you invoke bind on a function and pass an object, the method returns a new function. Invoking the new function as a function invokes the orginal function as a method of the object passed to bind. bind() also performs partial application: any arguments you pass to bind() after the first are bound along with the this value.",
+		"Link":""
+	},
+	"10": {
+		"Q":"",
+		"A":"",
+		"Link":""
+	},
+	"11": {
+		"Q":"Describe the Function() constructor.",
+		"A":"",
+		"Link":""
+	},
+	"12": {
+		"Q":"What is a delegated event?",
+		"A":"Delegated events are events that are attached to a parent element, but only get executed when the target of the event matches some criteria. Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.",
+		"Link":"http://codepen.io/32bitkid/blog/understanding-delegated-javascript-events"
+	},
+	"13": {
+		"Q":"What is the difference between e.target and e.currentTarget?",
+		"A":"e.target is actual target of the event. Where the event is trying to get to, or where it came from, in the DOM, whereas e.currentTarget is the current element that is handling the event.",
+		"Link":"http://codepen.io/32bitkid/blog/understanding-delegated-javascript-events"
+	},
+	"14": {
+		"Q":"A _____  is a function designed for the initialization of newly created objects.",
+		"A":"Constructor",
+		"Link":""
+	},
+	"15": {
+		"Q":"Two objects are instances of the same class if and only if they inherit from the same ________ object",
+		"A":"prototype",
+		"Link":""
+	},
+	"16": {
+		"Q":"One of the main problems when using instanceof or the constructor property for determining the class of an object occurs when there are multiple of these.",
+		"A":"Execution contexts, thus multiple copies of the constructor functions.",
+		"Link":""
+	},
+	"17": {
+		"Q":"What does an event target represent?",
+		"A":"The object on which the specified event occured.",
+		"Link":""
+	},
+	"18": {
+		"Q":"In IE8 and below, addEventListener is not available, what is used instead.",
+		"A":"window.attachEvent(event, callback)",
+		"Link":""
+	},
+	"19": {
+		"Q":"When working with IE, conditional comments are are useful for working around incompatibilities. How do you structure conditional comments?",
+		"A":"<--[if IE 6]> /* content here */ <![endif]-->",
+		"Link":""
+	},
+	"20": {
+		"Q":"The origin of a documents is defined as?",
+		"A":"The protocol, host, and port of the URL from which the document was loaded.",
+		"Link":"http://www.w3.org/TR/2011/WD-html5-20110405/origin-0.html"
+	},
+	"21": {
+		"Q":"When dealing with multi-domain websites what are some ways to work around the same origin policy that can prevent a script from accessing documents with different origins?",
+		"A":"1)Change the domain property of the document to a string that is a valid domain suffix of itself.  (Input break here) 2)Use cross origin resource sharing.  3)",
+		"Link":""
+	},
+	"22": {
+		"Q":"If two windows or frames contain scripts that set document.domain to the same value, this is an example of working around the ____-______ policy, and the two windows can now interact with eachother.",
+		"A":"same-origin.",
+		"Link":""
+	},
+	"23": {
+		"Q":"What is cross orgin resource sharing?",
+		"A":"",
+		"Link":"http://www.w3.org/TR/cors/"
+	},
+	"24": {
+		"Q":"Why would you want to modify the document.domain property?",
+		"A":"When dealing with multi-domain sites where windows want to interact with one another. Set the document.domain property to a string that is a valid domain suffix of itself. (cart.example.com & orders.example.com --> document.domain = example.com)",
+		"Link":"http://www.w3.org/TR/html5/browsers.html#dom-document-domain"
+	},
+	"25": {
+		"Q":"What is Cross Site Scripting (XSS)",
+		"A":"When an HTML tag(s) or scripts are injected into a target website.",
+		"Link":"https://cert.org/historical/advisories/CA-2000-02.cfm"
+	},
+	"26": {
+		"Q":"When is a website vulnerable to XSS?",
+		"A":"If it dynamically generates document content based on user submitted data without first sanitizing the data (removing any embedded HTML tags from it).",
+		"Link":""
+	},
+	"27": {
+		"Q":"What are ways to protect agains XSS?",
+		"A":"Remove any HTML tags from untrusted data before using it to create dynamic document content.",
+		"Link":""
+	},
+	"28": {
+		"Q":"What is the difference between setTimeout() and setInterval()?",
+		"A":"setTimeout() runs a callback after a specified number of milliseconds has elapsed, whereas setInterval() runs a callback repeatedly at specified intervals.",
+		"Link":""
+	},
+	"29": {
+		"Q":"What does the location property of the Window object represent?",
+		"A":"The current URL of the document displayed in the window.",
+		"Link":""
+	},
+	"30": {
+		"Q":"What is the differnce between window.location and document.location?",
+		"A":"document.location holds a static value of the URL of the document when it is first loaded, where as the window.location will update if you navigate to a fragment.",
+		"Link":""
+	},
+	"31": {
+		"Q":"What are some properties of the window object?",
+		"A":"href, protocol, host, hostname, port, pathname, search, hash (which all specify the various individual parts of the URL)",
+		"Link":""
+	},
+	"32": {
+		"Q":"What does the window.location.hash property represent?",
+		"A":"The fragment identifer portion of the URL if there is one.",
+		"Link":""
+	},
+	"33": {
+		"Q":"What does the window.location.search property represent?",
+		"A":"The portion of the URL that starts with a ?, often some sort of query string.",
+		"Link":""
+	},
+	"34": {
+		"Q":"What object would be used to move forward or backward through the browser history.",
+		"A":"history property of the window object. EX: history.go(-1) will move you one URL back, also history.back() & history.forward(). ",
+		"Link":""
+	},
+	"35": {
+		"Q":"How do you check the size  and number or colors available on a user's display.",
+		"A":"window.screen; screen.height, screen.width, screen.availWidth, screen.availHeight",
+		"Link":""
+	},
+	"27": {
+		"Q":"What are the three methods for displaying dialog boxes to users?",
+		"A":"alert(), confirm(), prompt()",
+		"Link":""
+	},
+	"27": {
+		"Q":"When an error propagages all the way up the call stack and an error message is going to be displayed in the browser's JavaScript console, what event handler is invoked.",
+		"A":"window.onerror. Thus use window.onerror = function(msg, url, line){/* body here */}",
+		"Link":""
+	},
+	"27": {
+		"Q":"",
+		"A":"",
+		"Link":""
+	},
+	"27": {
+		"Q":"",
+		"A":"",
+		"Link":""
+	},
+	"27": {
+		"Q":"",
+		"A":"",
+		"Link":""
+	},
+	"27": {
+		"Q":"",
+		"A":"",
+		"Link":""
+	},
+}

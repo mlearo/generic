@@ -1,0 +1,53 @@
+var css = {
+
+	"1": {
+			"Q":"What is resetting?",
+			"A":"A set of CSS rules that will reset the styling of all HTML elements. The aim of this reset file is ultimately to reduce the browser inconsistencies like default line heights, borders, color,font sizes of headings, paddings and margins.",
+			"Link":"http://www.pro-tekconsulting.com/blog/describe-what-a-reset-css-file-does-and-how-its-useful/"
+		},
+	"1": {
+			"Q":"",
+			"A":"",
+			"Link":""
+		},	
+	"1": {
+			"Q":"What's the difference between 'resetting' and 'normalizing' CSS?",
+			"A":"CSS resets aim to remove all built-in browser styling, Normalize CSS aims to make built-in browser styling consistent across browsers. Elements like H1-6 will appear bold, larger et cetera in a consistent way across browsers. You're then supposed to add only the difference in decoration your design needs",
+			"Link":"https://stackoverflow.com/questions/6887336/what-is-the-difference-between-normalize-css-and-reset-css"
+		},
+	"1": {
+			"Q":"Which would you choose, and why?",
+			"A":"",
+			"Link":""
+		},
+	"1": {
+			"Q":"What is the difference between classes and ID's in CSS?",
+			"A":"",
+			"Link":""
+		},
+	"1": {
+			"Q":"Which would you choose, and why?",
+			"A":"",
+			"Link":""
+		},
+	"1": {
+			"Q":"Which would you choose, and why?",
+			"A":"",
+			"Link":""
+		},
+	"1": {
+			"Q":"Which would you choose, and why?",
+			"A":"",
+			"Link":""
+		},
+	"1": {
+			"Q":"Which would you choose, and why?",
+			"A":"",
+			"Link":""
+		},
+	"1": {
+			"Q":"Which would you choose, and why?",
+			"A":"",
+			"Link":""
+		},	
+}
