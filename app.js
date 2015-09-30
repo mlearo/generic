@@ -10,7 +10,7 @@ var express = require('express'),
 
 // declare and instantiate routes
 var home = require('./routes/home');
-var signUp = require('./routes/signup');
+var signUp = require('./routes/signUp');
 var signin = require('./routes/signin');
 
 // delcare and set app variable equal to express function

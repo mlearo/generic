@@ -12,23 +12,24 @@
 		    <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		        <h4 class="modal-title" id="myModalLabel">Sign Up!</h4>
+
 		    </div>
-		    	<form method="post" action="/signin">
+		    	<form method="post" action="/signUp">
 			    <div class="modal-body">
 			    		<!-- Company Logo -->
 			    		<img id="modalImage" src="/images/RQUin.jpeg"></img> 
 				    	<h4>First Name</h4>
-				    	<input id="firstNameInput" class="form-control" required="true" type="text" autofocus="true" maxlength="20"> </input>
+				    	<input id="firstNameInput" name="firstName" class="form-control" required="true" type="text" autofocus="true" maxlength="20"> </input>
 				    	<h4>Last Name</h4>
-				    	<input id="lastNameInput" class="form-control" required="true" type="text" maxlength="20"> </input>
+				    	<input id="lastNameInput" name="lastName" class="form-control" required="true" type="text" maxlength="20"> </input>
 				    	<h4>Email Address</h4>
-				    	<input id="emailInput" class="form-control" required="true" type="email" maxlength="20"></input>
+				    	<input id="emailInput" name="email" class="form-control" required="true" type="email" maxlength="20"></input>
 				    	<h4>Password</h4>
-				    	<input  id="newUserPasswd" class="form-control" required="true" type="password" minlength="8" maxlength="14" ></input>
+				    	<input  id="newUserPasswd" name="passwd" class="form-control" required="true" type="password" minlength="8" maxlength="14" ></input>
 				    	<h4>Verify Password</h4>
-				    	<input  id="newUserPasswd" class="form-control" required="true" type="password" minlength="8" maxlength="14" ></input>
-	
+				    	<input  id="newUserPasswd" name="passwdConfirm" class="form-control" required="true" type="password" minlength="8" maxlength="14" ></input>
 	        	</div>
+
 			    <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			        <button id="signUpButton" type="submit" class="btn btn-primary">Submit</button>
@@ -49,14 +50,26 @@
 <div id="parentBody" class="container">
 
 	<div  id="aboutBody" class="container">
-		<div class="float-left">
-			
+		<div class="">
+			<aside id="aside" class="float-left">
+				<ul>
+					<li class="float-left circle"><a href="https://news.ycombinator.com/" target="_blank">News</a></li>
+					<li class="float-left circle"><a href="http://www.google.com" target="_blank">Flash Cards</a></li>
+					<li class="float-left circle"><a href="http://www.google.com" target="_blank">WORDS</a></li>
+					<li class="float-left circle"><a href="http://www.google.com" target="_blank">WORDS</a></li>
+				</ul>
+			</aside>
+		</div>
+		<div>
+			<h3>The is the main header</h3>
+			<p><img id="img" class="float-right" src="/images/RQUin.jpeg"></img>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
-			<div class="float-left clear">
-				<button id="signUp" class="btn btn-lrg btn-primary"> Sign Up</button>
-				<button class="btn btn-lrg btn-success">Contact Us</button>
-			</div>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+			</p>
+		</div>
 	</div>
-</div>
 
-</div> <!-- end main content container -->
+</div> 
+
+	<!-- end main content container -->
